@@ -1,0 +1,31 @@
+# BrightSource Energy
+
+> BrightSource Energy is a renewable energy technology company founded in 2006. It pioneered utility-scale Concentrated Solar Power (CSP) — designing and building the 377 MW Ivanpah Solar Electric Generating System in California plus CSP projects in Israel, Dubai and South Africa — and in 2022 transformed into a software company. It now commercializes OASES, a cloud-based, AI-powered Energy Management System (EMS) for portfolios of photovoltaics, battery energy storage (BESS), wind, microgrids and EV charging. Engineering is in Jerusalem, Israel, with a UK office in London.
+
+## Status of the API surface
+
+- BrightSource Energy publishes **no public API**, no developer portal, and no machine-readable API contract (no OpenAPI, AsyncAPI, GraphQL SDL, MCP server or A2A agent card) as of 2026-08-02.
+- OASES is sold as a commercial SaaS/EMS platform. Integration is arranged directly with the company; the product page describes an "OASES Gateway + IoT" SCADA edge controller and connections to ISO/RTO and utility market interfaces, inverters/chargers and EV charging infrastructure, but publishes no protocol or endpoint documentation.
+- Contact <info@brightsourceenergy.com> for platform or integration enquiries.
+
+## Company
+
+- [BrightSource Energy](https://www.brightsourceenergy.com/): Corporate website.
+- [About Us](https://www.brightsourceenergy.com/about-us): Company history, from CSP to the 2022 software transformation; leadership and careers (jobs@brightsourceenergy.com).
+- [Contact Us](https://www.brightsourceenergy.com/contact-us): Contact and demo requests.
+- [LinkedIn](https://www.linkedin.com/company/brightsource-energy/): Company profile and job postings.
+
+## Product
+
+- [OASES](https://www.brightsourceenergy.com/product): AI-powered Energy Management System — asset management and aggregation, market participation and bidding, price arbitrage and PPA management, grid services (load shifting, balancing, frequency regulation, demand response), and short/long-term forecasting.
+
+## Insights
+
+- [Insights](https://www.brightsourceenergy.com/insights): Articles on renewable energy optimization and market strategy.
+- [Insights RSS](https://www.brightsourceenergy.com/blog-feed.xml): RSS feed for the Insights section.
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/brightsource-energy/refs/heads/main/apis.yml): APIs.json 0.20 index for this provider.
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/brightsource-energy/refs/heads/main/security/brightsource-energy-domain-security.yml): Probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/brightsource-energy/refs/heads/main/well-known/brightsource-energy-well-known.yml): Recorded negative result for the /.well-known/ discovery surface.

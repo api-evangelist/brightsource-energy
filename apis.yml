@@ -1,17 +1,36 @@
 aid: brightsource-energy
 name: BrightSource Energy
-description: 'BrightSource Energy is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'BrightSource Energy is a renewable energy technology company founded in
+  2006, historically known as a pioneer of utility-scale Concentrated Solar Power (CSP)
+  — it designed, developed and built the 377 MW Ivanpah Solar Electric Generating System
+  in California along with CSP projects in Israel, Dubai and South Africa. In 2022 the
+  company transformed into a software business and now commercializes OASES, a cloud-based,
+  AI-powered Energy Management System (EMS) that forecasts, optimizes and dispatches
+  portfolios of photovoltaics, battery energy storage (BESS), wind, microgrids and EV
+  charging. OASES combines physics-based digital twins, big-data analytics and sensor
+  fusion with an on-site SCADA edge controller ("OASES Gateway + IoT") to run asset
+  management, energy-market bidding and arbitrage, PPA management, grid services and
+  frequency regulation. Engineering is based in Jerusalem, Israel, with a UK office in
+  London. BrightSource does not publish a public developer program, API documentation
+  or machine-readable API contract as of August 2026.'
+image: https://static.wixstatic.com/media/a08989_f5693b7905424ca1938e5f3c83469857~mv2.png
 url: https://raw.githubusercontent.com/api-evangelist/brightsource-energy/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Energy
+- Renewable Energy
+- Energy Management
+- Solar
+- Battery Storage
+- Grid Services
+- Energy Trading
+- Artificial Intelligence
+- Israel
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,41 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/brightsource-energy-domain-security.yml
+- type: LLMsTxt
+  url: llms/brightsource-energy-llms.txt
 - type: Website
+  url: https://www.brightsourceenergy.com/
+- type: About
+  url: https://www.brightsourceenergy.com/about-us
+- type: Product
+  url: https://www.brightsourceenergy.com/product
+- type: Blog
+  url: https://www.brightsourceenergy.com/insights
+- type: BlogRSS
+  url: https://www.brightsourceenergy.com/blog-feed.xml
+- type: Support
+  url: https://www.brightsourceenergy.com/contact-us
+- type: Email
+  url: mailto:info@brightsourceenergy.com
+- type: LinkedIn
+  url: https://www.linkedin.com/company/brightsource-energy/
+- type: SecondaryMarket
   url: https://forgeglobal.com/brightsource-energy_stock/
+x-enrichment:
+  date: '2026-08-02'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-api-surface:
+  public_api: false
+  checked: '2026-08-02'
+  note: >-
+    Contract discovery found no machine-readable contract and no developer surface.
+    Probed the corporate host for OpenAPI/Swagger (/openapi.json, /openapi.yaml,
+    /swagger.json, /api-docs), llms.txt, every /.well-known/ document including both
+    A2A agent-card paths, and eleven candidate API/docs subdomains (all NXDOMAIN).
+    No GraphQL or MCP endpoint exists to introspect. No first-party packages on npm or
+    PyPI; the github.com/brightsource org is an unrelated HR-tech company. OASES is a
+    commercial EMS sold direct, with no published API documentation.

@@ -1,0 +1,76 @@
+generated: '2026-08-02'
+method: probed
+source: live HTTP probes of the BrightSource Energy web host
+host: https://www.brightsourceenergy.com
+note: >-
+  No /.well-known/ discovery documents are published. The corporate site is a Wix-hosted
+  marketing site; every /.well-known/* path is answered by the SPA catch-all with an
+  HTTP 400 HTML error page, not a document. No api., docs., developer., app., oases.,
+  portal., status. or platform. subdomain resolves (all NXDOMAIN), so there is no
+  secondary host to probe. Recorded as a negative result — nothing was found and
+  nothing is wired into apis.yml.
+documents:
+- path: /.well-known/security.txt
+  status: 400
+  found: false
+- path: /.well-known/openid-configuration
+  status: 400
+  found: false
+- path: /.well-known/oauth-authorization-server
+  status: 400
+  found: false
+- path: /.well-known/oauth-protected-resource
+  status: 400
+  found: false
+- path: /.well-known/api-catalog
+  status: 400
+  found: false
+- path: /.well-known/ai-plugin.json
+  status: 400
+  found: false
+- path: /.well-known/agent-card.json
+  status: 400
+  found: false
+- path: /.well-known/agent.json
+  status: 400
+  found: false
+- path: /llms.txt
+  status: 404
+  found: false
+- path: /openapi.json
+  status: 400
+  found: false
+- path: /openapi.yaml
+  status: 400
+  found: false
+- path: /swagger.json
+  status: 400
+  found: false
+- path: /api-docs
+  status: 404
+  found: false
+- path: /robots.txt
+  status: 200
+  found: true
+  file: null
+  note: Wix default robots.txt (Allow / ; Disallow *?lightbox=) — not a discovery document.
+- path: /blog-feed.xml
+  status: 200
+  found: true
+  note: Wix blog RSS feed for the /insights section; wired in apis.yml as BlogRSS.
+subdomains_probed:
+- {host: api.brightsourceenergy.com, dns: NXDOMAIN}
+- {host: docs.brightsourceenergy.com, dns: NXDOMAIN}
+- {host: developer.brightsourceenergy.com, dns: NXDOMAIN}
+- {host: developers.brightsourceenergy.com, dns: NXDOMAIN}
+- {host: app.brightsourceenergy.com, dns: NXDOMAIN}
+- {host: oases.brightsourceenergy.com, dns: NXDOMAIN}
+- {host: portal.brightsourceenergy.com, dns: NXDOMAIN}
+- {host: my.brightsourceenergy.com, dns: NXDOMAIN}
+- {host: status.brightsourceenergy.com, dns: NXDOMAIN}
+- {host: platform.brightsourceenergy.com, dns: NXDOMAIN}
+- {host: cloud.brightsourceenergy.com, dns: NXDOMAIN}
+x-evidence:
+  fetched: '2026-08-02'
+  host: www.brightsourceenergy.com
+  hosting: Wix
