@@ -17,7 +17,7 @@ image: https://static.wixstatic.com/media/a08989_f5693b7905424ca1938e5f3c8346985
 url: https://raw.githubusercontent.com/api-evangelist/brightsource-energy/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
