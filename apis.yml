@@ -13,6 +13,17 @@ description: 'BrightSource Energy is a renewable energy technology company found
   frequency regulation. Engineering is based in Jerusalem, Israel, with a UK office in
   London. BrightSource does not publish a public developer program, API documentation
   or machine-readable API contract as of August 2026.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://static.wixstatic.com/media/a08989_f5693b7905424ca1938e5f3c83469857~mv2.png
 url: https://raw.githubusercontent.com/api-evangelist/brightsource-energy/refs/heads/main/apis.yml
 x-type: company
