@@ -24,6 +24,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://static.wixstatic.com/media/a08989_f5693b7905424ca1938e5f3c83469857~mv2.png
 url: https://raw.githubusercontent.com/api-evangelist/brightsource-energy/refs/heads/main/apis.yml
 x-type: company
